@@ -1,0 +1,54 @@
+{
+  "name": "express-plist-bodyparser",
+  "version": "0.3.0",
+  "description": "Simple plist body parser connect/express middleware",
+  "author": "Deepak Kumar <deepakk87@gmail.com>",
+  "contributors": [],
+  "homepage": "https://github.com/deepakk87/express-plist-bodyparser",
+  "main": "./index.js",
+  "scripts": {
+    "test": "mocha --reporter spec --check-leaks --bail test/ 2> /dev/null",
+    "test-cov": "istanbul cover node_modules/mocha/bin/_mocha -- --reporter dot --check-leaks test/ 2> /dev/null",
+    "test-travis": "istanbul cover node_modules/mocha/bin/_mocha --report lcovonly -- --reporter spec --check-leaks test/ 2> /dev/null"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git@github.com:deepakk87/express-xml-bodyparser.git"
+  },
+  "keywords": [
+    "xml",
+    "json",
+    "middleware",
+    "parser",
+    "express"
+  ],
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/deepakk87/express-plist-bodyparser/issues"
+  },
+  "dependencies": {
+    "base64-arraybuffer": "^0.1.5",
+    "sax": "^1.1.5",
+    "xml2js": "^0.4.16",
+    "xmldom": "^0.1.22"
+  },
+  "devDependencies": {
+    "mocha": "^2.2.5",
+    "supertest": "^1.0.1",
+    "istanbul": "^0.3.7",
+    "express": "^3.18"
+  },
+  "engines": {
+    "node": ">=0.10"
+  },
+  "directories": {
+    "test": "test"
+  },
+  "files": [
+    "LICENSE",
+    "README.md",
+    "index.js",
+    "lib/"
+  ],
+  "readmeFilename": "README.md"
+}
